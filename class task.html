@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("Enter user name");
+      let b = prompt("Food");
+      let c = +prompt("quantity");
+      // let d= prompt("price");
+
+      let e = 100 * c;
+      let f = e - (e * 10) / 100;
+      let g = e - (e * 20) / 100;
+      document.write("<h1>food panda</h1>" + "<br>");
+      //   document.write("customer name :"+a+"<br>");
+      //   document.write("food :"+b+"<br>");
+      //   document.write("Qty :"+c+"<br>");
+      //   document.write("price :"+d+"<br>");
+      //   document.write("Total price :"+e+"<br>");
+      //   document.write("Amount paid :"+f+"with 10% discount.");
+
+      if (b == "biryani") {
+        if (c >= 10 && c <= 19) {
+          document.write("customer name :" + a + "<br>");
+          document.write("food :" + b + "<br>");
+          document.write("Qty :" + c + "<br>");
+
+          document.write("Total price :" + e + "<br>");
+          document.write("Amount paid :" + f + "with 10% discount.");
+        } else if (c >= 20) {
+          document.write("customer name :" + a + "<br>");
+          document.write("food :" + b + "<br>");
+          document.write("Qty :" + c + "<br>");
+          // document.write("price :"+d+"<br>");
+          document.write("Total price :" + e + "<br>");
+          document.write("Amount paid :" + g + "with 20% discount.");
+        } else {
+          document.write("customer name :" + a + "<br>");
+          document.write("food :" + b + "<br>");
+          document.write("Qty :" + c + "<br>");
+          // document.write("price :"+d+"<br>");
+          document.write("Total price :" + e + "<br>");
+        }
+      } else if (b == "drink") {
+        if (c >= 10 && c <= 19) {
+          document.write("customer name :" + a + "<br>");
+          document.write("food :" + b + "<br>");
+          document.write("Qty :" + c + "<br>");
+          // document.write("price :"+d+"<br>");
+          document.write("Total price :" + e + "<br>");
+          document.write("Amount paid :" + f + "with 10% discount.");
+        } else if (c >= 20) {
+          document.write("customer name :" + a + "<br>");
+          document.write("food :" + b + "<br>");
+          document.write("Qty :" + c + "<br>");
+          // document.write("price :"+d+"<br>");
+          document.write("Total price :" + e + "<br>");
+          document.write("Amount paid :" + g + "with 20% discount.");
+        } else {
+          document.write("customer name :" + a + "<br>");
+          document.write("food :" + b + "<br>");
+          document.write("Qty :" + c + "<br>");
+          // document.write("price :"+d+"<br>");
+          document.write("Total price :" + e + "<br>");
+        }
+      } else {
+        document.write("not avalibale");
+      }
+    </script>
+  </body>
+</html>
